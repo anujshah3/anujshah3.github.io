@@ -55,6 +55,7 @@ section {
   background-color: #fef8b4;
 }
 .contact {
+  display: flex;
   background-color: #6fdcbf;
   align-items: start;
 }
@@ -191,7 +192,7 @@ a {
   line-height: 1.5;
 }
 .social-media {
-  width: 40%;
+  width: 60%;
 }
 .soc {
   margin-top: 30px;
@@ -259,4 +260,64 @@ a {
 .stackoverflow:hover {
   color: #fe7a15;
   fill: #fe7a15;
+}
+.contact-info-content {
+  display: flex;
+}
+.contact-info-content-left {
+  width: 60%;
+}
+
+.contact-info-content-right {
+  width: 40%;
+}
+
+.circle-image {
+  margin-left: 25px;
+  width: 350;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.panda-circle-container {
+  position: absolute;
+  margin-left: 45px;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10rem 10rem 10rem 10rem;
+  background-color: grey;
+}
+
+.panda-upper-head {
+  margin: 4rem 8rem;
+  position: relative;
+  background-color: white;
+  width: 9.5rem;
+  height: 5rem;
+  border-radius: 10rem 10rem 0 0;
+  z-index: 1;
+}
+
+.panda-mid-head {
+  margin: 10.5rem 42.1rem;
+  position: relative;
+  top: 4rem;
+  left: 13rem;
+  background-color: white;
+  width: 10.3rem;
+  height: 5rem;
+  border-radius: 6rem 6rem 4rem 4rem;
+  z-index: 2;
+}
+
+.panda-lower-head {
+  margin: 13rem 42.5rem;
+  position: relative;
+  top: 4rem;
+  left: 13rem;
+  background-color: white;
+  width: 9.5rem;
+  height: 3rem;
+  border-radius: 50%;
+  z-index: 3;
 }
