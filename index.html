@@ -1,170 +1,248 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Anuj Shah</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Website</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/jenthill");
+      @import url("https://fonts.cdnfonts.com/css/mosk");
+    </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        display: block;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
 
+      .main {
+        display: flex;
+      }
 
-</head>
-<body>
-	<div id="main">
-		<header class = "intro">
-			<h1 class = "intro-top">
-				Hey there!
-			</h1>
-			<h2 class = "intro-middle">
-				I'm &nbsp<span class = "name">Anuj Shah</span>, a Software Developer focused on building automated solutions for the next generation.
-			</h2>
-			<div class="get-in-touch-box">
-				<div class="get-in-touch-btn">
-					<span><!--a href = "mailto:anujshah031198@gmail.com"></a-->Get in touch</span>
-				</div>
-			</div>
-			<!--div class = "profile">
-				<img class = "profile-img" src="C:\Users\Anuj Shah\Documents\GIT\anujshah3.github.io\img\profile.jpg">
-			</div-->
+      .main-left {
+        width: 30%;
+        padding: 20px;
+        background-color: #f6f4f6; /* Semi-transparent black */
+        height: 100%;
+      }
 
-		</header>
+      .main-right {
+        width: 70%;
+        padding: 20px;
+        background-color: #6fdcbf; /* Semi-transparent black */
+        height: 100%;
+      }
 
-		<section class = "section" id = "background">
-			<div class = "section-type">
-				Background
-			</div>
-			<div class = "section-options">
-				<p>
-					I'm currently an Engineer working at <b><a href = "https://www.getcogno.ai/" target = "_blank">AllinCall Research and Solutions Pvt. Ltd(Cogno AI)</a></b> building chatbots for some of the top banks of India.<br> At the same time I am a final year student at <a href = "https://tsec.edu" target = "_blank">Thadomal Shahani Engineering College</a> studying Information Technology.
-				</p>
-				<p>
-					As a software engineer, I enjoy .
-					My goal is to .				
-				</p>
-				<p>
-					When I'm not around my laptop, you can probably find me either gardening, or climbing mountains else sleeping.
-				</p>
-			</div>
+      .main-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .about {
+        background-color: #ae8fdb;
+      }
+      .experience {
+        background-color: #fef8b4;
+      }
+      .projects {
+        background-color: #6fdcbf;
+      }
+      .contact {
+        background-color: #ae8fdb;
+      }
+      .banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding-bottom: 1.25rem;
+        padding-top: 1.25rem;
+      }
+      .wrapper {
+        max-width: 95rem;
+        max-height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem) / (100 - 20)));
+        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem) / (100 - 20)));
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+      }
+      .site-name {
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 1.2;
+      }
+      .site-header {
+        font-size: var(--step-0);
+        background-color: transparent;
+        position: relative;
+        border-top: none;
+        display: block;
+        margin-left: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-weight: 600;
+      }
+      ul[class] {
+        list-style: none;
+      }
+      .nav__list {
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        color: hsl(0, 0%, 25%);
+        font-family: Mosk, sans-serif;
+      }
+      .nav__item {
+        padding: 1.1rem 0 0.8rem 0;
+        flex-shrink: 0;
+      }
+      .nav__item a {
+        width: 100%;
+        position: relative;
+        display: block;
+        color: currentColor;
+        text-decoration: none;
+        margin-top: 1rem;
+        position: relative;
+      }
+      .nav__item-hover-inner {
+        display: block;
+        color: hsl(0, 0%, 25%);
+        position: relative;
+        font-weight: 400;
+        letter-spacing: 0.06rem;
+        line-height: 1.25;
+        padding-right: 25px;
+      }
 
-		</section>
-		<section class = "section" id = "skills">
-			<div class = "section-type">
-				Skills
-			</div>
-			<div class = "section-options">
+      .monitor {
+        fill: #c0c0c0;
+      }
 
-				<div class="skills-options">
+      .base {
+        fill: #000000;
+      }
+      .main-content {
+        margin-left: 25%;
+        width: 49%;
+        padding-top: calc(4rem + (6 - 4) * ((100vw - 20rem) / (100 - 20)));
+        padding-bottom: calc(4rem + (6 - 4) * ((100vw - 20rem) / (100 - 20)));
+      }
+      .greeting-head {
+        color: hsl(0, 0%, 25%);
+        transform: rotate(-5deg);
+        transform-origin: bottom left;
+        font-size: 25px;
+        letter-spacing: 1.2;
+        line-height: 1.5;
+        font-family: Jenthill, sans-serif;
+        justify-content: left;
+      }
+      .heading-desc {
+        position: relative;
+        z-index: 1;
+        letter-spacing: 0.6px;
+        line-height: 1.2;
+        font-size: 35px;
+        font-family: Mosk, sans-serif;
+        color: hsl(0, 0%, 25%);
+      }
+      .outline {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: hsl(0, 0%, 25%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="banner">
+        <div class="wrapper">
+          <a href="/" class="site-name"></a>
+          <nav class="site-header">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/about/" class="nav__item-hover">
+                  <span class="nav__item-hover-inner">About me</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/experience/" class="nav__item-hover">
+                  <span class="nav__item-hover-inner">Experience</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/projects/" class="nav__item-hover">
+                  <span class="nav__item-hover-inner">Projects</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/contact/" class="nav__item-hover">
+                  <span class="nav__item-hover-inner">Contact</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/contact/" class="nav__item-hover">
+                  <span class="nav__item-hover-inner">Resume</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main-left"></div>
+      <div class="main-right">
+        <div class="main-content">
+          <div class="greeting-head-wrapper">
+            <p class="greeting-head">👋 <span>Hey there</span></p>
+          </div>
+          <h1 class="heading-desc">
+            I'm Anuj Shah, a
+            <span class="outline">Software Developer</span> focused on building
+            automated solutions for the next generation.
+          </h1>
+        </div>
+      </div>
+    </section>
 
-					<div class="skills-category">
-						<div class = "skills-category-label">
-							LANGUAGES
-						</div>
-						<div>
-							<ul>
-								<li class = "skills-list-options">Python</li>
-								<li class = "skills-list-options">SQL</li>
-								<li class = "skills-list-options">PHP</li>
-								<li class = "skills-list-options">JS</li>
-								<li class = "skills-list-options">C</li>
-								<li class = "skills-list-options">HTML</li>
-							</ul>
-						</div>
-					</div>
+    <section class="about">
+      <h1>About</h1>
+    </section>
 
-					<div class="skills-category">
-						<div class = "skills-category-label">
-							Frameworks
-						</div>
-						<div>
-							<ul>
-								<li class = "skills-list-options">Flask</li>
-								<li class = "skills-list-options">BeautifulSoup</li>
-								<li class = "skills-list-options">Selenium WebDriver</li>
-							</ul>
-						</div>
-					</div>
-					<div class="skills-category">
-						<div class = "skills-category-label">
-							Tools
-						</div>
-						<div>
-							<ul>
-								<li class = "skills-list-options">Git</li>
-								<li class = "skills-list-options">MongoDB</li>
-								<li class = "skills-list-options">Postman</li>
-							</ul>
-						</div>
-					</div>
+    <section class="experience">
+      <h1>Experience</h1>
+    </section>
 
-				</div>
+    <section class="projects">
+      <h1>projects</h1>
+    </section>
 
-			</div>
-		</section>
-		<section class = "section" id = "experience">
-			<div class = "section-type">
-				Experience
-			</div>
-			<div class = "section-options">
-				<div class="jobs">
-					<div class="job">
-						<div class="location-time">
-							<div class="company-name">
-								<a href = "https://www.getcogno.ai/" target = "_blank">
-									AllinCall Research and Solutions Pvt. Ltd(Cogno AI)
-								</a>
-							</div>
-							<div class="company-time">
-								Aug 2020 - Present
-							</div>
-						</div>
-						<div class="position">
-							Junior Python Developer
-						</div>
-					</div>
+    <section class="contact">
+      <h1>Contact</h1>
+    </section>
 
-				</div>
-			</div>			
-		</section>
-<!--		
-		<section class = "section" id = "projects">
-			<div class = "section-type">
-				Projects
-			</div>
-			<div class = "section-options">
-				
-			</div>
-			
-		</section>
-		<section class = "section" id = "connect">
-			
-		</section>
--->
-	<footer class="footer">
-
-		<div class="social-container">
-			<ul class="social-icons">
-				<li class = "social-icons-li">
-					<a href = "https://www.linkedin.com/in/anujshah0311/" target="_blank">
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li class = "social-icons-li">
-					<a href = "https://github.com/anujshah3" target="_blank">
-						<i class="fa fa-github" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li class = "social-icons-li">
-					<a href = "https://www.facebook.com/anujshah68/" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li class = "social-icons-li">
-					<a href = "https://www.instagram.com/_shah_anuj/" target="_blank">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-				</li>
-
-			</ul>
-		</div>
-	</footer>
-	</div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
