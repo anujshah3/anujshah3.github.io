@@ -19,22 +19,22 @@
           <nav class="site-header">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="/about/" class="nav__item-hover">
+                <a href="#about-me" class="nav__item-hover">
                   <span class="nav__item-hover-inner">About me</span>
                 </a>
               </li>
               <li class="nav__item">
-                <a href="/experience/" class="nav__item-hover">
+                <a href="#work-experience" class="nav__item-hover">
                   <span class="nav__item-hover-inner">Experience</span>
                 </a>
               </li>
               <li class="nav__item">
-                <a href="/projects/" class="nav__item-hover">
+                <a href="#featured-projects" class="nav__item-hover">
                   <span class="nav__item-hover-inner">Projects</span>
                 </a>
               </li>
               <li class="nav__item">
-                <a href="/contact/" class="nav__item-hover">
+                <a href="#contact-me" class="nav__item-hover">
                   <span class="nav__item-hover-inner">Contact</span>
                 </a>
               </li>
@@ -66,19 +66,55 @@
       </div>
     </section>
 
-    <section class="about">
-      <h1>About</h1>
+    <section id="about-me" class="about">
+      <div class="about-outer-wrapper">
+        <div class="about-wrapper">
+          <div class="about-intro">
+            <h2 class="about-me-heading">About me.</h2>
+            <p>
+              I'm <span>Anuj Shah</span>, born and raised in Mumbai, a city of
+              dreams. I completed my undergraduate studies in Information
+              Technology at <span>TSEC</span>, Mumbai, graduating with
+              satisfactory grades and creating wonderful memories and lifelong
+              friendships in October 2020.
+            </p>
+            <p>
+              Following my graduation, I joined <span>CognoAI</span>, where I
+              spent a year building chatbots for the Finance industry. Seeking
+              further knowledge and growth, I moved to DeKalb, a small town in
+              Illinois, USA, to pursue a Master's degree in Computer Science
+              from <span>NIU</span>. I successfully graduated in May 2023.
+            </p>
+            <p>
+              During my master's program, I had the opportunity to work as a
+              Research Assistant, contributing to the development and
+              enhancement of reproducibility for Jupyter Notebook. Subsequently,
+              at <span>Verveware</span>, where I contributed to developing a
+              product aimed at streamlining processes in the Elderly care
+              industry. And, at <span>Continental</span>, I worked on solving
+              infrastructure issues and automating test cases.
+            </p>
+            <p>
+              When I'm not around my laptop, you can probably find me either
+              gardening, or hiking in the mountains else sleeping.
+            </p>
+          </div>
+        </div>
+        <figure class="profile-image">
+          <img src="img/profile.jpg" alt="My profile photo" />
+        </figure>
+      </div>
     </section>
 
-    <section class="experience">
+    <section id="work-experience" class="experience">
       <h1>Experience</h1>
     </section>
 
-    <section class="projects">
+    <section id="featured-projects" class="projects">
       <h1>projects</h1>
     </section>
 
-    <section class="contact">
+    <section id="contact-me" class="contact">
       <div class="inner-contact-box">
         <div class="contact-wrapper">
           <div class="contact-info">
@@ -173,6 +209,16 @@
       </div>
     </section>
 
-    <script></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>

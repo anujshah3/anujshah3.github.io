@@ -4,6 +4,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 p {
   margin-block-start: 1em;
@@ -11,6 +13,14 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   display: block;
+}
+h1,
+h2,
+h3 {
+  font-family: Mosk, sans-serif;
+  letter-spacing: 0.04em;
+  margin: 0;
+  padding: 0;
 }
 section {
   height: 100vh;
@@ -85,7 +95,7 @@ section {
   line-height: 1.2;
 }
 .site-header {
-  font-size: var(--step-0);
+  font-size: 17px;
   background-color: transparent;
   position: relative;
   border-top: none;
@@ -320,4 +330,59 @@ a {
   height: 3rem;
   border-radius: 50%;
   z-index: 3;
+}
+
+#about-me {
+  height: 100vh;
+}
+
+.about-wrapper {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: hsl(0, 0%, 25%);
+}
+.about-outer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-intro {
+  padding-right: 3rem rem;
+  max-width: 60ch;
+}
+
+.about-intro p span {
+  font-family: Mosk, sans-serif;
+  font-weight: bold;
+}
+
+.about-intro-heading {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  font-size: 50px;
+  line-height: 1.2;
+}
+.profile-image {
+  margin: 3.5rem auto 0;
+  position: relative;
+  display: block;
+  border: solid 2px hsl(0, 0%, 25%);
+  -webkit-box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 25%);
+  -moz-box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 25%);
+  box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 25%);
+  width: 90%;
+  height: 250px;
+  max-width: 400px;
+  transform: translateX(-0.5rem);
+  filter: saturate(0.7);
+  padding: 0;
+}
+
+.profile-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
