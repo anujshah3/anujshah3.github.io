@@ -396,6 +396,7 @@ a {
   padding: 5rem;
   display: block;
   height: 150vh;
+  color: hsl(0, 0%, 25%);
 }
 
 .work-experience-content {
@@ -418,13 +419,14 @@ a {
   font-size: 1rem;
   letter-spacing: 0.02em;
   line-height: 1.8;
+  color: hsl(0, 0%, 25%);
 }
 .company-link {
   margin-top: 10px;
   width: 65%;
   position: relative;
   text-decoration: none;
-  color: var(--color-dark);
+  color: hsl(0, 0%, 25%);
   --flow-space: 1em;
 }
 .company-name {
@@ -445,8 +447,8 @@ a {
 
 .featured-projects-wrapper {
   display: grid;
-  grid-template-columns: 1.2fr 5rem repeat(4, 0.33fr);
-  grid-template-rows: auto 2fr 3rem 0.75fr 1.5fr;
+  grid-template-columns: 1fr 5rem repeat(4, 0.45fr);
+  grid-template-rows: auto 4fr 6rem 6fr 2fr;
   align-items: center;
   max-width: 80rem;
   margin: 0 auto;
@@ -474,7 +476,7 @@ a {
   background-color: hsl(0, 0%, 97%);
   border-radius: 20px;
   border: solid 2px hsl(0, 0%, 25%);
-  padding: 4rem 1rem 1rem;
+  padding: 2rem;
   z-index: 1;
   display: flex;
   flex-direction: column;
