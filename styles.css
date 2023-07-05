@@ -528,3 +528,7 @@ a {
 .projects p {
   margin: 0; /* Reset default margin */
 }
+
+#featured-projects {
+  height: 175vh;
+}
