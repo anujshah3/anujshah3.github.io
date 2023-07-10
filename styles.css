@@ -451,8 +451,6 @@ a {
 }
 
 .project-container {
-  touch-action: none;
-  cursor: grab;
   user-select: none;
   color: hsl(0, 0%, 25%);
   position: relative;
