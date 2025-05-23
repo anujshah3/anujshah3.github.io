@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
           '@': path.resolve(__dirname, '.'),
         }
       },
-      base: '/',
+      base: '/anujshah3.github.io/',
       build: {
         outDir: 'dist',
         sourcemap: true,
