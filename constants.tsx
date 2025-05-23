@@ -56,7 +56,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Focus on enhancing and optimizing pipelines to streamline development processes.',
       'Implement efficient CI/CD workflows, guaranteeing developers receive prompt and dependable feedback.',
     ],
-    logoUrl: '/img/docusign-logo.png',
+    //logoUrl: '/img/docusign-logo.png',
   },
   {
     id: 'continental',
@@ -67,7 +67,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Developed a robust and scalable containerized service for automating testing of car modules.',
       'Achieved significant time and infrastructure savings by implementing a centralized ecosystem using low-latency instances.',
     ],
-    logoUrl: '/img/continental-logo.jpg',
+    //logoUrl: '/img/continental-logo.jpg',
   },
   {
     id: 'verveware',
@@ -78,7 +78,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Pioneered the development and deployment of a groundbreaking home care product, streamlining the whole process.',
       'Contributed to collaborative projects, developed interactive web apps, created engaging user experience, and optimized backend logic, leaving a lasting impact on the product and users experiences.',
     ],
-    logoUrl: '/img/verveware-logo.png',
+    //logoUrl: '/img/verveware-logo.png',
   },
   {
     id: 'niu',
@@ -89,7 +89,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Worked with two professors and PhD students to engineer and improve major features of Dataflow Notebook extension.',
       'Contributed to an open-source project aimed at elevating reproducibility of past work on Jupyter Notebook.',
     ],
-    logoUrl: '/img/NIU-logo.webp',
+    //logoUrl: '/img/NIU-logo.webp',
   },
   {
     id: 'cognoai',
@@ -100,7 +100,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Delivered high-quality, robust production code for a diverse array of projects for clients such as ICICI Bank, ICICI Securities, Nippon India Mutual Fund, Prabhudas Lilladher, and UTI Mutual Fund.',
       'Pioneered innovative chatbot and live chat solutions that elevated customer engagement and empowered sustainable business models.',
     ],
-    logoUrl: '/img/cognoai-logo.png',
+    //logoUrl: '/img/cognoai-logo.png',
   },
 ];
 
@@ -110,7 +110,7 @@ export const PROJECT_DATA: ProjectItem[] = [
     title: 'Few Shot Learning',
     description: 'Analyze IRS tax data and predict topics discussed using Few-Shot Learning techniques combined with Topic Modeling. Uncover trends, visualize topics over time, and enhance topic prediction for unexplored sections with this comprehensive repository.',
     techStack: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'NLTK'],
-    imageUrl: '/img/fsl.jpeg',
+    //imageUrl: '/img/fsl.jpeg',
     //liveLink: '#',
     repoLink: 'https://github.com/anujshah3/Few-Shot-Learning-with-Topic-Modeling',
   },
@@ -119,7 +119,7 @@ export const PROJECT_DATA: ProjectItem[] = [
     title: 'AddressTrail',
     description: 'Streamline address management with a unique ID system, simplifying updates for users and ensuring accurate data for organizations.',
     techStack: ['Go', 'PostgreSQL', 'Redis', 'Docker'],
-    imageUrl: '/img/address-trail.jpeg',
+    //imageUrl: '/img/address-trail.jpeg',
     // liveLink: '#',
 		repoLink: 'https://github.com/anujshah3/AddressTrail',
   },
@@ -128,7 +128,7 @@ export const PROJECT_DATA: ProjectItem[] = [
     title: 'AccuStay',
     description: 'Harnessing the power of machine learning, I developed predictive models for hotel booking cancellation, leveraging factors such as guest preferences, geographic location, hotel details, and many more factors. By deploying advanced models and tuning hyperparameters, I achieved an impressive accuracy, empowering hotels to optimize bookings and deliver exceptional guest experiences.',
     techStack: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn'],
-    imageUrl: '/img/accustay.jpeg',
+    //imageUrl: '/img/accustay.jpeg',
     // liveLink: '#',
     // repoLink: '#',
   },
