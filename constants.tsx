@@ -107,6 +107,15 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
 export const PROJECT_DATA: ProjectItem[] = [
   {
     id: 'project1',
+    title: 'Git History MCP Server',
+    description: 'A Model Context Protocol (MCP) server that provides Git repository history and context to AI assistants.',
+    techStack: ['TypeScript', 'Node.js', 'Express', 'Git'],
+    imageUrl: '/img/git-history-mcp.jpeg',
+    //liveLink: '#',
+    repoLink: 'https://github.com/anujshah3/git-history-mcp',
+  },
+  {
+    id: 'project2',
     title: 'Few Shot Learning',
     description: 'Analyze IRS tax data and predict topics discussed using Few-Shot Learning techniques combined with Topic Modeling. Uncover trends, visualize topics over time, and enhance topic prediction for unexplored sections with this comprehensive repository.',
     techStack: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'NLTK'],
@@ -115,22 +124,13 @@ export const PROJECT_DATA: ProjectItem[] = [
     repoLink: 'https://github.com/anujshah3/Few-Shot-Learning-with-Topic-Modeling',
   },
   {
-    id: 'project2',
+    id: 'project3',
     title: 'AddressTrail',
     description: 'Streamline address management with a unique ID system, simplifying updates for users and ensuring accurate data for organizations.',
     techStack: ['Go', 'PostgreSQL', 'Redis', 'Docker'],
     imageUrl: '/img/address-trail.jpeg',
     // liveLink: '#',
 		repoLink: 'https://github.com/anujshah3/AddressTrail',
-  },
-  {
-    id: 'project3',
-    title: 'AccuStay',
-    description: 'Harnessing the power of machine learning, I developed predictive models for hotel booking cancellation, leveraging factors such as guest preferences, geographic location, hotel details, and many more factors. By deploying advanced models and tuning hyperparameters, I achieved an impressive accuracy, empowering hotels to optimize bookings and deliver exceptional guest experiences.',
-    techStack: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn'],
-    imageUrl: '/img/accustay.jpeg',
-    // liveLink: '#',
-    // repoLink: '#',
   },
 ];
 
